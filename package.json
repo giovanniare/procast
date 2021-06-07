@@ -4,8 +4,8 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "start": "node server.js",
-        "nodemon": "nodemon server.js",
+        "start": "node app.js",
+        "nodemon": "nodemon app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Giovanni Arellano",
