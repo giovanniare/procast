@@ -16,13 +16,12 @@
 
         <script>
             (function($) {
-                $( window ).scroll(function() {
-                    if ( $(window).scrollTop() > 4) {
+                $( document ).scroll(function() {
+                    if ( $(document).scrollTop() > 4) {
                         $( "#logo" ).attr('src', 'assets/img/logo_dorado6.svg');
                     } else {
                         $( "#logo" ).attr('src', 'assets/img/logo_verde.svg');
-                    }
-                    
+                    }  
                 });
             })(jQuery);
         </script>
