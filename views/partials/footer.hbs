@@ -20,11 +20,25 @@
                     if ( $(document).scrollTop() > 4) {
                         $( "#logo" ).attr('src', 'assets/img/logo_dorado6.svg');
                     } else {
-                        $( "#logo" ).attr('src', 'assets/img/logo_verde.svg');
+                        $( "#logo" ).attr('src', 'assets/img/logo_bd.svg');
                     }  
                 });
             })(jQuery);
         </script>
+
+        <!--script>
+
+            window.onscroll = function {
+                var imagen = document.getElementById("logo") 
+                if (document.body.scrollTop > 4) {
+                    imagen.src = 'assets/img/logo_dorado6.svg'
+                } else {
+                    imagen.src = 'assets/img/logo_bd.svg'
+                }
+            }
+
+        </script-->
+
 
 
     </body>
