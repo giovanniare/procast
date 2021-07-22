@@ -16,12 +16,12 @@
 
         <script>
             (function($) {
-                $( document ).scroll(function() {
-                    if ( $(document).scrollTop() > 4) {
-                        $( "#logo" ).attr('src', 'assets/img/logo_dorado6.svg');
-                    } else {
+                $( window ).scroll(function() {
+                    if ( $(window).scrollTop() < 4 ) {
                         $( "#logo" ).attr('src', 'assets/img/logo_bd.svg');
-                    }  
+                    } else {
+                        $( "#logo" ).attr('src', 'assets/img/logo_dorado6.svg');
+                    } 
                 });
             })(jQuery);
         </script>
