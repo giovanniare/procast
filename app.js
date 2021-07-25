@@ -14,32 +14,40 @@ app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
     res.render('home', {
-        imageHeader: '../../assets/img/masthead.jpg',
-        tittle: 'PROCAST'
+        imageHeader: 'masthead.jpg',
+        titulo: 'PROCAST'
     })
 })
 
 app.get('/desarrollos', (req, res) => {
     res.render('desarrollos', {
-        imageHeader: '../../assets/img/desarrollo.jpg',
-        tittle: 'DESARROLLOS',
-        descripcion: 'En Procast la Arquitectura es un todo, por esto en nuestro proceso entendemos la visión de 360 grados con arquitectos, estructurístas, financieros, constructores, diseñadores industriales y gráficos los cuales agregan valor y garantizan la ejecución de un proyecto integral.'
+        imageHeader: 'des',
+        titulo: 'DESARROLLOS',
+        descripcion: 'En Procast la Arquitectura es un todo.'
     })
 })
 
 app.get('/propiedades', (req, res) => {
     res.render('propiedades', {
-        imageHeader: '../../assets/img/propiedades.jpg',
-        tittle: 'PROPIEDADES',
+        imageHeader: 'pro',
+        titulo: 'PROPIEDADES',
         descripcion: 'Da un vistazo a nuestro catalogo de propiedades listas para ti.'
     })
 })
 
 app.get('/blog', (req, res) => {
     res.render('blog', {
-        imageHeader: '../../assets/img/blog.jpg',
-        tittle: 'PROXIMAMENTE',
-        descripcion: 'Espera nuestro nuevo blog, aqui oodras aprender sobre las tendencias y mejores practicas sobre real estate.'
+        imageHeader: 'blog',
+        titulo: 'PROXIMAMENTE',
+        descripcion: 'Espera nuestro nuevo blog, aqui podras aprender sobre las tendencias y mejores practicas sobre real estate.'
+    })
+})
+
+app.get('/foto_galeria', (req, res) => {
+    res.render('foto_galeria', {
+        imageHeader: 'blog',
+        titulo: 'GALERIA',
+        descripcion: ''
     })
 })
 
