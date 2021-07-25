@@ -6,8 +6,31 @@
         <!-- Core theme JS-->
         <script src="assets/js/scripts_grayscale.js"></script>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.0/viewer.js"></script>
+
+        <script src="https://unpkg.com/jquery@3/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap@4/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/viewer.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function () {
+                var galley = document.getElementById('galley');
+                var viewer;
+
+                $('#modal').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewer = new Viewer(galley, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewer.destroy();
+                    }
+                });
+            });
+        </script>
 
         <script src="assets/js/wow.min.js"></script>
         <script>

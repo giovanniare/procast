@@ -19,6 +19,31 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.0/viewer.css"/>
+
+        <style>
+            .pictures_galeria {
+            list-style: none;
+            margin: 0;
+            max-width: 30rem;
+            padding: 0;
+            }
+
+            .pictures_galeria > li {
+            border: 1px solid transparent;
+            float: left;
+            height: calc(100% / 3);
+            margin: 0 -1px -1px 0;
+            overflow: hidden;
+            width: calc(100% / 3);
+            }
+
+            .pictures_galeria > li > img {
+            cursor: zoom-in;
+            width: 100%;
+            }
+        </style>
+
         <!--  Meta datos  --> 
         <meta property="og:site_name" content="PROCAST"/>
         <meta property="og:title" content="Procast · Real estate"/>

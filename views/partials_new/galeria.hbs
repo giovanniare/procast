@@ -10,7 +10,7 @@
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="wow col animate__animated animate__fadeInUpBig animate__slow" data-wow-offset="15" data-wow-delay=".5s">
-                            <a href="/foto_galeria">  
+                            <a data-target="#modal" data-toggle="modal">  
                                 <div class="card shadow-sm">
                                     <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-in">
                                         <img class="bd-placeholder-img card-img-top" src="assets/img/kh-p.jpg" width="100%" height="225">
@@ -20,6 +20,46 @@
                                     </figure>
                                 </div>
                             </a>
+
+
+
+                            <div class="modal fade" id="modal" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel">Viewer</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="galley">
+                                                <ul class="pictures_galeria">
+                                                    <li><img data-original="assets/img/casa-kh/1.jpg" src="assets/img/casa-kh/1.jpg" alt="Cuo Na Lake"></li>
+                                                    <li><img data-original="assets/img/casa-kh/2.jpg" src="assets/img/casa-kh/2.jpg" alt="Tibetan Plateau"></li>
+                                                    <li><img data-original="assets/img/casa-kh/3.jpg" src="assets/img/casa-kh/3.jpg" alt="Jokhang Temple"></li>
+                                                    <li><img data-original="assets/img/casa-kh/4.jpg" src="assets/img/casa-kh/4.jpg" alt="Potala Palace 1"></li>
+                                                    <li><img data-original="assets/img/casa-kh/5.jpg" src="assets/img/casa-kh/5.jpg" alt="Potala Palace 2"></li>
+                                                    <li><img data-original="assets/img/casa-kh/6.jpg" src="assets/img/casa-kh/6.jpg" alt="Potala Palace 3"></li>
+                                                    <li><img data-original="assets/img/casa-kh/7.jpg" src="assets/img/casa-kh/7.jpg" alt="Lhasa River"></li>
+                                                    <li><img data-original="assets/img/casa-kh/8.jpg" src="assets/img/casa-kh/8.jpg" alt="Namtso 1"></li>
+                                                    <li><img data-original="assets/img/casa-kh/9.jpg" src="assets/img/casa-kh/9.jpg" alt="Namtso 2"></li>
+                                                    <li><img data-original="assets/img/casa-kh/10.jpg" src="assets/img/casa-kh/10.jpg" alt="Namtso 2"></li>
+                                                    <li><img data-original="assets/img/casa-kh/11.jpg" src="assets/img/casa-kh/11.jpg" alt="Namtso 2"></li>
+                                                    <li><img data-original="assets/img/casa-kh/12.jpg" src="assets/img/casa-kh/12.jpg" alt="Namtso 2"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -58,7 +98,6 @@
                                         CASA GG
                                     </figcaption>
                                 </figure>
-                                
                             </div>
                         </div>
                     </div>
