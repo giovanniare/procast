@@ -13,22 +13,76 @@
         <script src="../js/viewer.js"></script>
         <script>
             window.addEventListener('DOMContentLoaded', function () {
-                var galley = document.getElementById('galley');
-                var viewer;
+                var galleykh = document.getElementById('galley-kh');
+                var viewerkh;
 
-                $('#modal').on('shown.bs.modal', function (e) {
+                $('#modal-kh').on('shown.bs.modal', function (e) {
                     // WARNING: should ignore Viewer's `shown` event here.
                     if(e.namespace === 'bs.modal') {
-                        viewer = new Viewer(galley, {
+                        viewerkh = new Viewer(galleykh, {
                             url: 'data-original',
                     });
                 }
                 }).on('hidden.bs.modal', function (e) {
                     // WARNING: should ignore Viewer's `hidden` event here.
                     if(e.namespace === 'bs.modal') {
-                        viewer.destroy();
+                        viewerkh.destroy();
                     }
                 });
+
+                var galleycl = document.getElementById('galley-cl');
+                var viewercl;
+
+                $('#modal-cl').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewercl = new Viewer(galleycl, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewercl.destroy();
+                    }
+                });
+
+                var galleyag = document.getElementById('galley-ag');
+                var viewerag;
+
+                $('#modal-ag').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerag = new Viewer(galleyag, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerag.destroy();
+                    }
+                });
+
+
+                var galleygg = document.getElementById('galley-gg');
+                var viewergg;
+
+                $('#modal-gg').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewergg = new Viewer(galleygg, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewergg.destroy();
+                    }
+                });
+
+                
             });
         </script>
 
