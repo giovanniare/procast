@@ -30,6 +30,24 @@
                     }
                 });
 
+                var galleykhi = document.getElementById('galley-kh-i');
+                var viewerkhi;
+
+                $('#modal-kh-i').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerkhi = new Viewer(galleykhi, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerkhi.destroy();
+                    }
+                });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
                 var galleycl = document.getElementById('galley-cl');
                 var viewercl;
 
@@ -47,23 +65,43 @@
                     }
                 });
 
-                var galleyag = document.getElementById('galley-ag');
-                var viewerag;
+                var galleycli = document.getElementById('galley-cl-i');
+                var viewercli;
 
-                $('#modal-ag').on('shown.bs.modal', function (e) {
+                $('#modal-cl-i').on('shown.bs.modal', function (e) {
                     // WARNING: should ignore Viewer's `shown` event here.
                     if(e.namespace === 'bs.modal') {
-                        viewerag = new Viewer(galleyag, {
+                        viewercli = new Viewer(galleycli, {
                             url: 'data-original',
                     });
                 }
                 }).on('hidden.bs.modal', function (e) {
                     // WARNING: should ignore Viewer's `hidden` event here.
                     if(e.namespace === 'bs.modal') {
-                        viewerag.destroy();
+                        viewercli.destroy();
                     }
                 });
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                var galleyaz = document.getElementById('galley-az');
+                var vieweraz;
+
+                $('#modal-az').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        vieweraz = new Viewer(galleyaz, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        vieweraz.destroy();
+                    }
+                });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                 var galleygg = document.getElementById('galley-gg');
                 var viewergg;
@@ -79,6 +117,44 @@
                     // WARNING: should ignore Viewer's `hidden` event here.
                     if(e.namespace === 'bs.modal') {
                         viewergg.destroy();
+                    }
+                });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7777
+
+                var galleyaf = document.getElementById('galley-af');
+                var vieweraf;
+
+                $('#modal-af').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        vieweraf = new Viewer(galleyaf, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        vieweraf.destroy();
+                    }
+                });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7777
+
+                var galleycss = document.getElementById('galley-css');
+                var viewercss;
+
+                $('#modal-css').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewercss = new Viewer(galleycss, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewercss.destroy();
                     }
                 });
 

@@ -23,7 +23,8 @@ app.get('/desarrollos', (req, res) => {
     res.render('desarrollos', {
         imageHeader: 'des',
         titulo: 'DESARROLLOS',
-        descripcion: 'En Procast la Arquitectura es un todo.'
+        descripcion: 'En Procast la Arquitectura es un todo.',
+        imgTitulo: 'Desarrollos.png'
     })
 })
 
@@ -31,7 +32,8 @@ app.get('/propiedades', (req, res) => {
     res.render('propiedades', {
         imageHeader: 'pro',
         titulo: 'PROPIEDADES',
-        descripcion: 'Da un vistazo a nuestro catalogo de propiedades listas para ti.'
+        descripcion: 'Da un vistazo a nuestro catalogo de propiedades listas para ti.',
+        imgTitulo: 'Propi.png'
     })
 })
 
@@ -39,23 +41,12 @@ app.get('/blog', (req, res) => {
     res.render('blog', {
         imageHeader: 'blog',
         titulo: 'PROXIMAMENTE',
-        descripcion: 'Espera nuestro nuevo blog, aqui podras aprender sobre las tendencias y mejores practicas sobre real estate.'
-    })
-})
-
-app.get('/foto_galeria', (req, res) => {
-    res.render('foto_galeria', {
-        imageHeader: 'blog',
-        titulo: 'GALERIA',
-        descripcion: ''
+        descripcion: 'Espera nuestro nuevo blog, aqui podras aprender sobre las tendencias y mejores practicas sobre real estate.',
+        imgTitulo: 'proxi.png'
     })
 })
 
 // DESAROLLOS
-
-app.get('/desarrollos/casa-kh', (req, res) => {
-    res.render('desarrollos')
-})
 
 app.listen(port, () => {
     console.log(`Escuchando en el puerto ${port}`)
