@@ -4,9 +4,10 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Dejanos tus datos y nos pondremos en contacto!</h2>
-                        <form class="form-signup d-flex flex-column flex-sm-row">
-                            <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." action="mailto:giovanniare9525@gmail.com" method="post" enctype="multipart/form-data"/>
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        <form class="form-signup d-flex flex-column flex-sm-row" action="/contacto" method="post">
+                            <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputName" name="name" type="text" placeholder="Ingresa tu nombre..."  />
+                            <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" name ="email" type="email" placeholder="Ingresa tu correo electronico..."  />
+                            <button class="btn btn-primary" type="submit">Contactar</button>
                         </form>
                     </div>
                 </div>
