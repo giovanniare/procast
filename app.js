@@ -44,6 +44,15 @@ app.get('/propiedades', (req, res) => {
     })
 })
 
+app.get('/servicios', (req, res) => {
+    res.render('servicios', {
+        imageHeader: 'servicios',
+        titulo: 'SERVICIOS',
+        descripcion: 'En Procast ofrecemos servicios integrales.',
+        imgTitulo: 'Servicios.png'
+    })
+})
+
 app.get('/blog', (req, res) => {
     res.render('blog', {
         imageHeader: 'blog',

@@ -11089,7 +11089,7 @@ body {
 @media (min-width: 992px) {
     .projects-section .featured-text {
         padding: 0 0 0 2rem;
-        border-left: 0.5rem solid #64a19d;
+        /*border-left: 0.5rem solid #64a19d;*/
     }
 }
 
@@ -11358,6 +11358,63 @@ body {
     }
     .masthead_blog h2,
     .masthead_blog .h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+.masthead_servicios {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../../assets/img/servis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masthead_servicios h1,
+.masthead_servicios .h1 {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.13));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.masthead_servicios h2,
+.masthead_servicios .h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masthead_servicios h1,
+    .masthead_servicios .h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead_servicios {
+        height: 100vh;
+        padding: 0;
+    }
+    .masthead_servicios h1,
+    .masthead_servicios .h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead_servicios h2,
+    .masthead_servicios .h2 {
         max-width: 30rem;
         font-size: 1.25rem;
     }
