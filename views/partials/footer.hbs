@@ -2,7 +2,9 @@
             <div class="container px-4 px-lg-5">Copyright &copy; PROCAST - {{ getAnio }}</div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        
         <!-- Core theme JS-->
         <script src="assets/js/scripts_grayscale.js"></script>
 
@@ -158,6 +160,75 @@
                     }
                 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+                var galleyic = document.getElementById('galley-ic');
+                var vieweric;
+
+                $('#modal-ic').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        vieweicl = new Viewer(galleyic, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        vieweric.destroy();
+                    }
+                });
+
+                var galleyici = document.getElementById('galley-ic-i');
+                var viewerici;
+
+                $('#modal-ic-i').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerici = new Viewer(galleyici, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerici.destroy();
+                    }
+                });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+                var galleylm = document.getElementById('galley-lm');
+                var viewerlm;
+
+                $('#modal-lm').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerlm = new Viewer(galleylm, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerlm.destroy();
+                    }
+                });
+
+                var galleylmi = document.getElementById('galley-lm-i');
+                var viewerlmi;
+
+                $('#modal-lm-i').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerlmi = new Viewer(galleylmi, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerlmi.destroy();
+                    }
+                });
                 
             });
         </script>
@@ -165,6 +236,15 @@
         <script src="assets/js/wow.min.js"></script>
         <script>
             new WOW().init();
+        </script>
+
+        <script>
+            var options = {
+                animation : true
+            }
+
+            var phone = document.getElementById('telef')
+            var tooltip = new bootstrap.Tooltip(phone, options)
         </script>
 
     </body>

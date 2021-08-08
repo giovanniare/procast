@@ -30,7 +30,7 @@ app.get('/desarrollos', (req, res) => {
     res.render('desarrollos', {
         imageHeader: 'des',
         titulo: 'DESARROLLOS',
-        descripcion: 'En Procast la Arquitectura es un todo.',
+        descripcion: 'En Procast la Arquitectura es un todo',
         imgTitulo: 'Desarrollos.png'
     })
 })
@@ -39,7 +39,16 @@ app.get('/propiedades', (req, res) => {
     res.render('propiedades', {
         imageHeader: 'pro',
         titulo: 'PROPIEDADES',
-        descripcion: 'Da un vistazo a nuestro catalogo de propiedades listas para ti.',
+        descripcion: 'Da un vistazo a nuestro catalogo de propiedades listas para ti',
+        imgTitulo: 'Propi.png'
+    })
+})
+
+app.get('/decoraciones', (req, res) => {
+    res.render('decoraciones', {
+        imageHeader: 'decoraciones',
+        titulo: 'DECORACIONES',
+        descripcion: '"Espacio es el respiro del Arte" Frank Lloyd Wright',
         imgTitulo: 'Propi.png'
     })
 })
@@ -48,7 +57,7 @@ app.get('/servicios', (req, res) => {
     res.render('servicios', {
         imageHeader: 'servicios',
         titulo: 'SERVICIOS',
-        descripcion: 'En Procast ofrecemos servicios integrales.',
+        descripcion: 'En Procast ofrecemos servicios integrales',
         imgTitulo: 'Servicios.png'
     })
 })
@@ -57,7 +66,7 @@ app.get('/blog', (req, res) => {
     res.render('blog', {
         imageHeader: 'blog',
         titulo: 'PROXIMAMENTE',
-        descripcion: 'Espera nuestro nuevo blog, aqui podras aprender sobre las tendencias y mejores practicas sobre real estate.',
+        descripcion: 'Espera nuestro nuevo blog, aqui podras aprender sobre las tendencias y mejores practicas sobre real estate',
         imgTitulo: 'proxi.png'
     })
 })
