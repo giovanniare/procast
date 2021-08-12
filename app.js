@@ -50,7 +50,7 @@ app.get('/decoraciones', (req, res) => {
         titulo: 'DECORACIONES',
         descripcion: '"Espacio es el respiro del Arte"',
         autor: '- Frank Lloyd Wright -',
-        imgTitulo: 'Propi.png'
+        imgTitulo: 'Deco.png'
     })
 })
 

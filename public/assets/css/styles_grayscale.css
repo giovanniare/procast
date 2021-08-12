@@ -4608,8 +4608,8 @@ fieldset:disabled .btn {
         position: absolute;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
     }
     .navbar-expand-lg .navbar-nav-scroll {
         overflow: visible;
@@ -4635,8 +4635,8 @@ fieldset:disabled .btn {
         position: absolute;
     }
     .navbar-expand-xl .navbar-nav .nav-link {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
     }
     .navbar-expand-xl .navbar-nav-scroll {
         overflow: visible;
