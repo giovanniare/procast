@@ -39,7 +39,7 @@ app.get('/propiedades', (req, res) => {
     res.render('propiedades', {
         imageHeader: 'pro',
         titulo: 'PROPIEDADES',
-        descripcion: 'Da un vistazo a nuestro catalogo de propiedades listas para ti',
+        descripcion: 'Da un vistazo a nuestro catalogo de propiedades',
         imgTitulo: 'Propi.png'
     })
 })
