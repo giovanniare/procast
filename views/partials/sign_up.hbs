@@ -4,12 +4,30 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Dejanos tus datos y nos pondremos en contacto!</h2>
-                        <form class="form-signup d-flex flex-column flex-sm-row" action="/contacto" method="post">
+                        <!--form class="form-signup d-flex flex-column flex-sm-row" action="/contacto" method="post">
                             <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputName" name="name" type="text" placeholder="Nombre..."  />
                             <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" name ="email" type="email" placeholder="Email..."  />
                             <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputPhone" name ="phone" type="phone" placeholder="Teléfono..."  />
                             <button class="btn btn-primary" type="submit">Contactar</button>
-                        </form>
+                        </form-->
+
+                        <form action="/contacto" method="post">
+                            <div class="mb-3">
+                                <label class="form-label text-white">Nombre</label>
+                                <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-white">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name ="email" placeholder=" Ingresa tu Email...">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-white">Numero telefónico</label>
+                                <input type="phone" class="form-control" id="inputPhone" name ="phone" placeholder=" Ingresa tu Teléfono..."> 
+                            </div>
+                            <input type="hidden" name="desde" value="los servicios en general">
+                            <button type="submit" class="btn btn-primary">Contactar</button>
+                        </form>                        
+                        
                     </div>
                 </div>
             </div>

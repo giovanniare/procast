@@ -9,24 +9,62 @@
                             
                     </div>
                     <div class="col-xl-5 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4 class="wow animate__animated animate__pulse animate__slow dorado" data-wow-offset="15">Asesoría Inmobiliaria</h4>
-                            <p class="wow animate__animated animate__fadeInUpBig animate__slow text-black-50 mb-0" data-wow-offset="15">
-                                Analizamos junto con nuestros clientes
-                                las mejores opciones con base a sus preferencias,
-                                presupuestos y oportunidades, identificando
-                                la mejor alternativa del mercado
-                                para la compra o colocación de un inmueble.<br><br>
-                                Fungimos como puente entre nuestros clientes 
-                                y socios financieros para la obtención de un crédito o financiamiento.
-                                
-                            </p>
+                        <div class="featured-text text-center text-lg-left" style="cursor:pointer; cursor: hand">
+                            <a data-target="#modal-AI" data-toggle="modal">
+                                <h4 class="wow animate__animated animate__pulse animate__slow dorado" data-wow-offset="15">Asesoría Inmobiliaria</h4>
+                                <p class="wow animate__animated animate__fadeInUpBig animate__slow text-black-50 mb-0" data-wow-offset="15">
+                                    Analizamos junto con nuestros clientes
+                                    las mejores opciones con base a sus preferencias,
+                                    presupuestos y oportunidades, identificando
+                                    la mejor alternativa del mercado
+                                    para la compra o colocación de un inmueble.<br><br>
+                                    Fungimos como puente entre nuestros clientes 
+                                    y socios financieros para la obtención de un crédito o financiamiento.
+                                    
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    
+                
+                <div class="modal fade" id="modal-AI" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel">Asesoría Inmobiliaria</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="contacto-AI">
+                                    <h3>Si necesitas vender o comprar una propiedad, compártenos tus datos para asesorarte.</h3>
+                                    
+                                    <form action="/contacto" method="post">
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Nombre</label>
+                                            <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Email address</label>
+                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name ="email" placeholder=" Ingresa tu Email...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Numero telefónico</label>
+                                            <input type="phone" class="form-control" id="inputPhone" name ="phone" placeholder=" Ingresa tu Teléfono..."> 
+                                        </div>
+                                        <input type="hidden" name="desde" value="ASESORIA INMOBILIARIA">
+                                        <button type="submit" class="btn btn-primary">Contactar</button>
+                                    </form>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center ">
                     <div class="col-lg-6" data-wow-offset="15" data-wow-delay="1.5s">
@@ -37,21 +75,64 @@
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="wow animate__animated animate__bounce animate__slow dorado" data-wow-offset="15">Remodelación <br> Diseño de interiores</h4>
-                                    <p class="wow animate__animated animate__backInLeft animate__slow mb-0 text-white-50" data-wow-offset="15">
-                                        Trabajamos para que tu hogar crezca, 
-                                        se adapte y mejore a tu medida.
-                                        Contamos con servicio de remodelación,
-                                        diseño de interiores y acabados especiales,
-                                        enfocados en buscar la mejor calidad y precio.<br>
-                                    </p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                <div class="project-text w-100 my-auto text-center text-lg-left" style="cursor:pointer; cursor: hand">
+                                    <a data-target="#modal-RDI" data-toggle="modal">
+                                        <h4 class="wow animate__animated animate__bounce animate__slow dorado" data-wow-offset="15">Remodelación <br> Diseño de interiores</h4>
+                                        <p class="wow animate__animated animate__backInLeft animate__slow mb-0 text-white-50" data-wow-offset="15">
+                                            Trabajamos para que tu hogar crezca, 
+                                            se adapte y mejore a tu medida.
+                                            Contamos con servicio de remodelación,
+                                            diseño de interiores y acabados especiales,
+                                            enfocados en buscar la mejor calidad y precio.<br>
+                                        </p>
+                                        <hr class="d-none d-lg-block mb-0 ms-0" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="modal fade" id="modal-RDI" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel">Remodelación y Diseño de interiores</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="contacto-RDI">
+                                    <h3>Si requieres una remodelación o diseño de interiores, compártenos tus datos para una cita.</h3>
+                                    
+                                    <form action="/contacto" method="post">
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Nombre</label>
+                                            <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Email address</label>
+                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name ="email" placeholder=" Ingresa tu Email...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Numero telefónico</label>
+                                            <input type="phone" class="form-control" id="inputPhone" name ="phone" placeholder=" Ingresa tu Teléfono..."> 
+                                        </div>
+                                        <input type="hidden" name="desde" value="REMODELACION Y DISEÑO DE INTERIORES">
+                                        <button type="submit" class="btn btn-primary">Contactar</button>
+                                    </form>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6" data-wow-offset="15" data-wow-delay="1.5s">
@@ -62,23 +143,66 @@
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="wow animate__animated animate__bounce animate__slow dorado" data-wow-offset="15">Consultoría Inmobiliaria</h4>
-                                    <p class="wow animate__animated animate__backInRight animate__slow mb-0 text-white-50" data-wow-offset="15">
-                                        Búsqueda, gestión y acompañamiento
-                                        para una inversión segura
-                                        en un bien inmueble o desarrollo.<br><br>
-                                        Brindamos a los clientes guía, seguimiento y
-                                        sobre todo la confianza de que su inversión
-                                        estará segura en nuestra empresa.
-                                    </p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                <div class="project-text w-100 my-auto text-center text-lg-right" style="cursor:pointer; cursor: hand">
+                                    <a data-target="#modal-CI" data-toggle="modal">
+                                        <h4 class="wow animate__animated animate__bounce animate__slow dorado" data-wow-offset="15">Consultoría Inmobiliaria</h4>
+                                        <p class="wow animate__animated animate__backInRight animate__slow mb-0 text-white-50" data-wow-offset="15">
+                                            Búsqueda, gestión y acompañamiento
+                                            para una inversión segura
+                                            en un bien inmueble o desarrollo.<br><br>
+                                            Brindamos a los clientes guía, seguimiento y
+                                            sobre todo la confianza de que su inversión
+                                            estará segura en nuestra empresa.
+                                        </p>
+                                        <hr class="d-none d-lg-block mb-0 me-0" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Proyect three -->
+
+
+                <div class="modal fade" id="modal-CI" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel">Consultoría Inmobiliaria</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="contacto-CI">
+                                    <h3>Si buscas rentabilidad al invertir en una propiedad, compártenos tus datos para una consultoría.</h3>
+                                    
+                                    <form action="/contacto" method="post">
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Nombre</label>
+                                            <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Email address</label>
+                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name ="email" placeholder=" Ingresa tu Email...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Numero telefónico</label>
+                                            <input type="phone" class="form-control" id="inputPhone" name ="phone" placeholder=" Ingresa tu Teléfono..."> 
+                                        </div>
+                                        <input type="hidden" name="desde" value="CONSULTORIA INMOBILIARIA">
+                                        <button type="submit" class="btn btn-primary">Contactar</button>
+                                    </form>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center" style="padding-top: 2rem;">
                     <div class="col-xl-8 col-lg-7" data-wow-offset="15" data-wow-delay="1.5s">
@@ -87,20 +211,63 @@
                             
                     </div>
                     <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4 class="wow animate__animated animate__pulse animate__slow dorado" data-wow-offset="15">Desarrollo Inmobiliario</h4>
-                            <p class="wow animate__animated animate__fadeInUpBig animate__slow text-black-50 mb-0" data-wow-offset="15">
-                                Gestionamos y creamos proyectos,
-                                con márgenes anuales o por proyecto,
-                                en construcciones verticales y horizontales.<br><br>
-                                En Procast te ayudamos con:<br>
-                                - Captación de fondos y desarrollo de
-                                proyectos (previamente evaluados).<br>
-                                - Gestión con entidades financieras.<br>
-                                - Gestión de terrenos para emprendimientos.<br>
-                            </p>
+                        <div class="featured-text text-center text-lg-left" style="cursor:pointer; cursor: hand">
+                            <a data-target="#modal-DI" data-toggle="modal">
+                                <h4 class="wow animate__animated animate__pulse animate__slow dorado" data-wow-offset="15">Desarrollo Inmobiliario</h4>
+                                <p class="wow animate__animated animate__fadeInUpBig animate__slow text-black-50 mb-0" data-wow-offset="15">
+                                    Gestionamos y creamos proyectos,
+                                    con rentabilidad anual o por proyecto,
+                                    en construcciones verticales y horizontales.<br><br>
+                                    En Procast te ayudamos con:<br>
+                                    - Captación de fondos y desarrollo de
+                                    proyectos (previamente evaluados).<br>
+                                    - Gestión con entidades financieras.<br>
+                                    - Gestión de terrenos para emprendimientos.<br>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="modal-DI" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel">Desarrollo Inmobiliario</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="contacto-DI">
+                                    <p> - Si buscas la creación o gestión de un proyecto inmobiliario;</p>
+                                    <p> - Si buscas una rentabilidad segura (anual o por proyecto);</p>
+                                    <h3>Compártenos tus datos para una cita.</h3>
+                                                                        
+                                    <form action="/contacto" method="post">
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Nombre</label>
+                                            <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Email address</label>
+                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name ="email" placeholder=" Ingresa tu Email...">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-black">Numero telefónico</label>
+                                            <input type="phone" class="form-control" id="inputPhone" name ="phone" placeholder=" Ingresa tu Teléfono..."> 
+                                        </div>
+                                        <input type="hidden" name="desde" value="DESARROLLO INMOBILIARIO">
+                                        <button type="submit" class="btn btn-primary">Contactar</button>
+                                    </form>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>

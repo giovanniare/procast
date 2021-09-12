@@ -97,16 +97,16 @@ app.post('/contacto', (req, res) => {
             from: 'contacto@procast-re.com', // sender address
             to: req.body.email, // list of receivers
             subject: "PROCAST REAL STATE", // Subject line
-            text: `Que tal ${req.body.name}, ¡Gracias por tu interes! En poco tiempo uno de nuestros ejecutivos se pondra en contacto contigo brindarte una atención personalizada. Whatsapp: 55 44 48 92 78 <br><br>Redes sociales IG: https://www.instagram.com/procastrealestate/ FB: https://www.facebook.com/ProcastRealEstate/ LD: https://mx.linkedin.com/in/israel-castelan`, // plain text body
-            html: `Que tal ${req.body.name},<br> ¡Gracias por tu interes! En poco tiempo uno de nuestros ejecutivos se pondra en contacto contigo brindarte una atención personalizada . <br><br>Whatsapp: 55 44 48 92 78 <br><br>Redes sociales <br>IG: https://www.instagram.com/procastrealestate/ <br>FB: https://www.facebook.com/ProcastRealEstate/ <br>LD: https://mx.linkedin.com/in/israel-castelan`, // html body
+            text: `Que tal ${req.body.name}, ¡Gracias por tu interes! En poco tiempo uno de nuestros ejecutivos se pondra en contacto contigo para brindarte una atención personalizada. Whatsapp: 55 44 48 92 78 <br><br>Redes sociales IG: https://www.instagram.com/procastrealestate/ FB: https://www.facebook.com/ProcastRealEstate/ LD: https://mx.linkedin.com/in/israel-castelan`, // plain text body
+            html: `Que tal ${req.body.name},<br> ¡Gracias por tu interes! En poco tiempo uno de nuestros ejecutivos se pondra en contacto contigo para brindarte una atención personalizada . <br><br>Whatsapp: 55 44 48 92 78 <br><br>Redes sociales <br>IG: https://www.instagram.com/procastrealestate/ <br>FB: https://www.facebook.com/ProcastRealEstate/ <br>LD: https://mx.linkedin.com/in/israel-castelan`, // html body
         });
 
         let procast = await transporter.sendMail({
             from: 'contacto@procast-re.com', // sender address
             to: 'contacto@procast-re.com, castelan@procast-re.com', // list of receivers
             subject: "PROCAST REAL STATE", // Subject line
-            text: `TEAM. \n\n El cliente ${req.body.name} ha solicitado informacion, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone}`, // plain text body
-            html: `TEAM. <br> El cliente ${req.body.name} ha solicitado informacion, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone}`, // html body
+            text: `TEAM. \n\n El cliente ${req.body.name} ha solicitado informacion sobre ${req.body.desde}, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone}`, // plain text body
+            html: `TEAM. <br> El cliente ${req.body.name} ha solicitado informacion sobre ${req.body.desde}, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone}`, // html body
         });
 
         console.log("Message sent: %s", info.messageId);
