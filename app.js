@@ -105,8 +105,8 @@ app.post('/contacto', (req, res) => {
             from: 'contacto@procast-re.com', // sender address
             to: 'contacto@procast-re.com, castelan@procast-re.com', // list of receivers
             subject: "PROCAST REAL STATE", // Subject line
-            text: `TEAM. \n\n El cliente ${req.body.name} ha solicitado informacion sobre ${req.body.desde}, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone}`, // plain text body
-            html: `TEAM. <br> El cliente ${req.body.name} ha solicitado informacion sobre ${req.body.desde}, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone}`, // html body
+            text: `TEAM. \n\n El cliente ${req.body.name} ha solicitado informacion sobre ${req.body.desde}, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone} \n\n Y estos son los comentarios: ${req.body.comentarios}`, // plain text body
+            html: `TEAM. <br> El cliente ${req.body.name} ha solicitado informacion sobre ${req.body.desde}, por favor ponte en contacto con el, su email: ${req.body.email} y su numero: ${req.body.phone} <br><br> Y estos son los comentarios: ${req.body.comentarios}`, // html body
         });
 
         console.log("Message sent: %s", info.messageId);
