@@ -1,6 +1,6 @@
         <footer class="footer bg-black small text-center text-white-50">
             <img id="logo" src="assets/img/logo_dorado6.svg" class="img-fluid" onerror="this.onerror=null;this.src='https://placeimg.com/200/300/animals';">
-            <div class="container px-4 px-lg-5">Copyright &copy; PROCAST - {{ getAnio }}</div>
+            <div class="container px-4 px-lg-5">Copyright &copy; PROCAST-RE - {{ getAnio }}</div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -231,8 +231,44 @@
                         viewerlmi.destroy();
                     }
                 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+                var galleyclv = document.getElementById('galley-clv');
+                var viewerclv;
+
+                $('#modal-clv').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerclv = new Viewer(galleyclv, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerclv.destroy();
+                    }
+                });
+
+                var galleyclvi = document.getElementById('galley-clv-i');
+                var viewerclvi;
+
+                $('#modal-clv-i').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerclvi = new Viewer(galleyclvi, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerlmi.destroy();
+                    }
+                });
                 
             });
+            
         </script>
 
         <script src="assets/js/wow.min.js"></script>
