@@ -11,7 +11,7 @@
                             <button class="btn btn-primary" type="submit">Contactar</button>
                         </form-->
 
-                        <form action="/contacto" method="post">
+                        <form action="/contacto" method="post" id="test">
                             <div class="mb-3">
                                 <label class="form-label text-white">Nombre</label>
                                 <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
@@ -30,7 +30,12 @@
                             </div>
                             <input type="hidden" name="coment" value="0">
                             <input type="hidden" name="desde" value="los servicios en general">
-                            <button type="submit" class="btn btn-primary">Contactar</button>
+                            <button class="g-recaptcha" 
+                                data-sitekey="6LeCiyEdAAAAAEMHM-OuwgSfDUaY4cnRY2Me5FAg" 
+                                data-callback='onSubmit' 
+                                data-action='submit'>Submit
+                            </button>
+                            <!--button type="submit" class="btn btn-primary">Contactar</button-->
                         </form>                        
                         
                     </div>
