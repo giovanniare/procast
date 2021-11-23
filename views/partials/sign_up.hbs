@@ -11,7 +11,7 @@
                             <button class="btn btn-primary" type="submit">Contactar</button>
                         </form-->
 
-                        <form action="/contacto" method="post" id="test">
+                        <form action="/contacto" method="post" id="test" onsubmit="return miFuncion(this)">
                             <div class="mb-3">
                                 <label class="form-label text-white">Nombre</label>
                                 <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
@@ -30,12 +30,16 @@
                             </div>
                             <input type="hidden" name="coment" value="0">
                             <input type="hidden" name="desde" value="los servicios en general">
+
+                            <div class="g-recaptcha" data-sitekey={{ getValue }} data-callback="enabledSubmit"></div>
+                            <br/>
+                            <input type="submit" name="enviar" placeholder="ENVIAR">
                             
-                            <button type="submit" class="btn btn-primary g-recaptcha"
+                            <!--button type="submit" class="btn btn-primary g-recaptcha"
                                 data-sitekey= {{ getValue }}
                                 data-callback='onSubmit' 
                                 data-action='submit'>Contactar
-                            </button>
+                            </button-->
                         </form>                        
                         
                     </div>

@@ -15,12 +15,25 @@
         <script src="https://unpkg.com/bootstrap@4/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="../js/viewer.js"></script>
 
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <!--script src="https://www.google.com/recaptcha/api.js"></script-->
         <script>
+            function miFuncion(a) {
+                var response = grecaptcha.getResponse();
+
+                if(response.length == 0){
+                    alert("Necesitas marcar el boton de no soy un bot para continuar")
+                    return false
+                    event.preventDefault();
+                } else {
+                    return true
+                }
+            }
+        </script>
+        <!--script>
             function onSubmit(token) {
                 document.getElementById("test").submit();
             }
-        </script>
+        </script-->
 
         <script>
             window.addEventListener('DOMContentLoaded', function () {
