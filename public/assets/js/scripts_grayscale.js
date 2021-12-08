@@ -18,10 +18,10 @@ window.addEventListener('DOMContentLoaded', event => {
         }
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
-            logo.src = 'assets/img/logo_bd.svg';
+            logo.src = 'assets/img/logo_bd_1.svg';
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
-            logo.src = 'assets/img/logo_dorado6.svg';
+            logo.src = 'assets/img/logo_dorado6_1.svg';
         }
 
     };
