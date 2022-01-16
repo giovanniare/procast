@@ -11,7 +11,7 @@
                             <button class="btn btn-primary" type="submit">Contactar</button>
                         </form-->
 
-                        <form action="/contacto" method="post" id="test" onsubmit="return miFuncion(this)">
+                        <!--form action="/contacto" method="post" id="test" onsubmit="return miFuncion(this)">
                             <div class="mb-3">
                                 <label class="form-label text-white">Nombre</label>
                                 <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
@@ -34,14 +34,63 @@
                             <div class="g-recaptcha" data-sitekey={{ getValue }} data-callback="enabledSubmit"></div>
                             <br/>
                             <input class="btn btn-primary" type="submit" name="enviar" placeholder="ENVIAR">
-                            
-                            <!--button type="submit" class="btn btn-primary g-recaptcha"
-                                data-sitekey= {{ getValue }}
-                                data-callback='onSubmit' 
-                                data-action='submit'>Contactar
-                            </button-->
-                        </form>                        
+
+                        </form-->                        
                         
+                        
+                        <button type="button" class="btn btn-primary" data-target="#modal-home" data-toggle="modal">Contacto</button>
+                        
+
+
+
+                        <div class="modal fade" id="modal-home" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalLabel">CONTACTO</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="galley-home">
+                                            <h3>Si estas interesado en algún proyecto compártenos tus comentarios.</h3>
+
+                                            <form action="/contacto" method="post" id="test">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-black">Nombre</label>
+                                                    <input type="text" class="form-control" id="inputName" name="name" placeholder=" Ingresa tu Nombre...">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label text-black">Email address</label>
+                                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name ="email" placeholder=" Ingresa tu Email...">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label text-black">Número telefónico</label>
+                                                    <input type="phone" class="form-control" id="inputPhone" name ="phone" placeholder=" Ingresa tu Teléfono..."> 
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label text-black">Comentarios</label>
+                                                    <textarea type="text" class="form-control" id="inputComents" name="comentarios" placeholder=" Compártenos tus cometarios..."></textarea>
+                                                </div>
+                                                <input type="hidden" name="coment" value="0">
+                                                <input type="hidden" name="desde" value="los servicios en general">
+
+                                                <div class="g-recaptcha" data-sitekey={{ getValue }} data-callback="enabledSubmit"></div>
+                                                <br/>
+                                                <input class="btn btn-primary" type="submit" name="enviar" placeholder="ENVIAR">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>

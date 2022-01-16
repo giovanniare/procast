@@ -286,7 +286,26 @@
                         viewerlmi.destroy();
                     }
                 });
-                
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                var galleyhome = document.getElementById('galley-home');
+                var viewerhome;
+
+                $('#modal-home').on('shown.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `shown` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerhome = new Viewer(galleyhome, {
+                            url: 'data-original',
+                    });
+                }
+                }).on('hidden.bs.modal', function (e) {
+                    // WARNING: should ignore Viewer's `hidden` event here.
+                    if(e.namespace === 'bs.modal') {
+                        viewerhome.destroy();
+                    }
+                });
+           
             });
             
         </script>
